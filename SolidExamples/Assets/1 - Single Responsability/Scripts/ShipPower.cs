@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ShipPower
 {
-    private int _shipEnergy;
-    private int _maxEnergy;
+    private int _shipPower;
+    private int _maxPower;
 
-    public ShipPower(int maxEnergy)
+    public ShipPower(int maxPower)
     {
-        _shipEnergy = _maxEnergy;
+        _shipPower = _maxPower;
     }
     private void DecreaceEnergy()
     {
-        _shipEnergy--;
+        _shipPower--;
     }
 
     private void IncreaseEnergy()
     {
-        if(_shipEnergy < _maxEnergy)
-        _shipEnergy++;
+        if(_shipPower < _maxPower)
+        _shipPower++;
     }
 }
